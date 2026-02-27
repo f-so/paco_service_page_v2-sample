@@ -231,15 +231,15 @@ export default function Pricing() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-sm">
             <div className="flex items-center justify-between p-3 sm:p-4 bg-white rounded-lg">
               <span className="text-gray-700">オフモールのみ</span>
-              <span className="font-semibold text-gray-900">1,500円</span>
+              <span className="font-semibold text-gray-900">1,480円</span>
             </div>
             <div className="flex items-center justify-between p-3 sm:p-4 bg-white rounded-lg">
               <span className="text-gray-700">セカストのみ</span>
-              <span className="font-semibold text-gray-900">3,000円</span>
+              <span className="font-semibold text-gray-900">2,980円</span>
             </div>
             <div className="flex items-center justify-between p-3 sm:p-4 bg-white rounded-lg">
               <span className="text-gray-700">全サイト</span>
-              <span className="font-semibold text-gray-900">4,000円</span>
+              <span className="font-semibold text-gray-900">3,980円</span>
             </div>
           </div>
         </div>
