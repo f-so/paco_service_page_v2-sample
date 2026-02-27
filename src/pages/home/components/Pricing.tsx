@@ -295,7 +295,7 @@ export default function Pricing() {
                 セカスト以外の通知ツールを使いたい
               </h4>
               <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
-                → カスタムプラン（1,500円〜）
+                → カスタムプラン（1,480円〜）
               </p>
               <p className="text-xs sm:text-sm text-gray-500">柔軟に選択可能</p>
             </div>
@@ -303,7 +303,7 @@ export default function Pricing() {
               <h4 className="font-semibold text-gray-900 mb-2 sm:mb-3 text-sm sm:text-base">
                 複数サイトの通知ツールを使いたい
               </h4>
-              <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">→ カスタムプラン（1,500円〜）</p>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">→ カスタムプラン（1,480円〜）</p>
               <p className="text-xs sm:text-sm text-gray-500">必要なサイトだけを選択！</p>
             </div>
           </div>
