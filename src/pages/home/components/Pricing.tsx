@@ -71,10 +71,10 @@ export default function Pricing() {
               おすすめ
             </div>
             {/* 今だけ！吹き出し */}
-            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10">
-              <div className="relative bg-red-500 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-2xl text-base sm:text-xl font-bold shadow-2xl animate-bounce whitespace-nowrap">
+            <div className="absolute top-0 right-2 sm:top-4 sm:right-4 z-10">
+              <div className="relative bg-red-500 text-white px-4 py-2 sm:px-8 sm:py-4 rounded-2xl text-sm sm:text-xl font-bold shadow-2xl animate-bounce whitespace-nowrap">
                 🔥 今だけ！
-                <div className="absolute -bottom-2 left-6 w-4 h-4 bg-red-500 rotate-45"></div>
+                <div className="absolute -bottom-2 left-4 sm:left-6 w-4 h-4 bg-red-500 rotate-45"></div>
               </div>
             </div>
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 mt-2">
