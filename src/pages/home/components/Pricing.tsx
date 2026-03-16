@@ -66,7 +66,7 @@ export default function Pricing() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-10 sm:mb-16">
           {/* Standard Plan */}
-          <div className="bg-gradient-to-br from-teal-50 to-white p-6 sm:p-10 rounded-2xl shadow-lg border-2 border-teal-500 relative">
+          <div id="standard-plan" className="bg-gradient-to-br from-teal-50 to-white p-6 sm:p-10 rounded-2xl shadow-lg border-2 border-teal-500 relative">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-teal-500 text-white px-6 py-2 rounded-full text-sm font-semibold whitespace-nowrap">
               おすすめ
             </div>
@@ -280,7 +280,10 @@ export default function Pricing() {
             PACOの新着通知は、自分に必要なプランを選べます
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-8">
-            <div className="bg-white p-6 sm:p-8 rounded-xl">
+            <a
+              href="#standard-plan"
+              className="bg-white p-6 sm:p-8 rounded-xl block hover:shadow-md transition-shadow cursor-pointer"
+            >
               <h4 className="font-semibold text-gray-900 mb-2 sm:mb-3 text-sm sm:text-base">
                 まずセカストで勝ちたい
               </h4>
@@ -297,8 +300,11 @@ export default function Pricing() {
                   最も出品数が多い
                 </p>
               </div>
-            </div>
-            <div className="bg-white p-6 sm:p-8 rounded-xl">
+            </a>
+            <a
+              href="#custom-plan"
+              className="bg-white p-6 sm:p-8 rounded-xl block hover:shadow-md transition-shadow cursor-pointer"
+            >
               <h4 className="font-semibold text-gray-900 mb-2 sm:mb-3 text-sm sm:text-base">
                 セカスト以外の通知ツールを使いたい
               </h4>
@@ -306,14 +312,17 @@ export default function Pricing() {
                 → カスタムプラン（1,480円〜）
               </p>
               <p className="text-xs sm:text-sm text-gray-500">柔軟に選択可能</p>
-            </div>
-            <div className="bg-white p-6 sm:p-8 rounded-xl">
+            </a>
+            <a
+              href="#custom-plan"
+              className="bg-white p-6 sm:p-8 rounded-xl block hover:shadow-md transition-shadow cursor-pointer"
+            >
               <h4 className="font-semibold text-gray-900 mb-2 sm:mb-3 text-sm sm:text-base">
                 複数サイトの通知ツールを使いたい
               </h4>
               <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">→ カスタムプラン（1,480円〜）</p>
               <p className="text-xs sm:text-sm text-gray-500">必要なサイトだけを選択！</p>
-            </div>
+            </a>
           </div>
         </div>
       </div>
