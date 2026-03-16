@@ -19,7 +19,7 @@ export async function sendWelcomeEmail(toEmail: string, name: string): Promise<v
     from: process.env.SMTP_FROM ?? process.env.SMTP_USER,
     to: toEmail,
     subject: "ご登録ありがとうございます",
-    text: `${name}様\n\nご登録ありがとうございます。`,
+    text: `${name}様\n\nご登録ありがとうございます。\n\nLINEから登録したメールアドレスを運営者に送信してください。\nhttps://lin.ee/ORf3l7j\n\n※ このメールは送信専用です。返信いただいてもお問い合わせには対応できません。\nお問い合わせは LINE よりお願いいたします。`,
     html: `
       <div style="font-family: sans-serif;">
         <p>${name}様</p>
@@ -28,6 +28,9 @@ export async function sendWelcomeEmail(toEmail: string, name: string): Promise<v
         <p>（決済時に設定したメールアドレスと違う場合は認証できません。）</p>
         <br>
         <p>メールのリンクが開けない方はこちらをコピーしてください：https://lin.ee/ORf3l7j</p>
+        <br>
+        <p>※ このメールは送信専用です。返信いただいてもお問い合わせには対応できません。</p>
+        <p>お問い合わせは上記の LINE よりお願いいたします。</p>
       </div>
     `,
   };

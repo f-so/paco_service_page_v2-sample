@@ -43,7 +43,7 @@ export default function FinalCTA() {
           </div>
           <div className="flex items-center justify-center gap-3">
             <i className="ri-check-line text-xl sm:text-2xl"></i>
-            <span className="text-base sm:text-lg">価格据え置き保証</span>
+            <span className="text-base sm:text-lg">契約時の価格を据え置き保証</span>
           </div>
         </div>
       </div>

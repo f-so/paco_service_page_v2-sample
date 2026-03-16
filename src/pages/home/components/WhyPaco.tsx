@@ -1,5 +1,9 @@
 import { useTermsModal } from '../../../contexts/TermsModalContext';
 
+function scrollToCustomPlan() {
+  document.getElementById('custom-plan')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
 export default function WhyPaco() {
   const { openTermsModal } = useTermsModal();
 
@@ -33,7 +37,7 @@ export default function WhyPaco() {
               通知〜仕入れまでスマホで完結
             </h3>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-              Discord通知をスマホで受け取り、そのまま　商品ページへアクセス。外出中でも、移動中でも、いつでもどこでも仕入れチャンスを逃す心配はなし！
+              Discord通知をスマホで受け取り、そのまま商品ページへアクセス。外出中でも、移動中でも、いつでもどこでも仕入れチャンスを逃す心配はなし！
             </p>
           </div>
 
@@ -67,7 +71,7 @@ export default function WhyPaco() {
         {/* Bottom CTA */}
         <div className="mt-10 sm:mt-12 text-center">
           <p className="text-base sm:text-lg text-gray-600 mb-5 sm:mb-6">
-            まずは7日間、無料でPACOの新着通知ツールを体験してみてください
+            まずは7日間無料でPACOの新着通知ツールを体験してみてください
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
@@ -79,7 +83,7 @@ export default function WhyPaco() {
             </button>
             <button
               type="button"
-              onClick={openTermsModal}
+              onClick={scrollToCustomPlan}
               className="inline-block bg-gray-900 text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-gray-800 transition-colors whitespace-nowrap cursor-pointer shadow-lg text-center"
             >
               カスタムプランを、<br />7日間無料で試してみる！

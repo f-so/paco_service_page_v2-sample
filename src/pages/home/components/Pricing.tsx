@@ -32,19 +32,19 @@ export default function Pricing() {
     const hasOffmall = selectedSites.includes('offmall');
 
     if (hasSecondstreet && hasTrefac && hasOffmall) {
-      return 'https://buy.stripe.com/test_eVq00k5vNcobdoW8qmcbC09';
+      return import.meta.env.VITE_STRIPE_URL_SECONDSTREET_TREFAC_OFFMALL ?? null;
     } else if (hasSecondstreet && hasTrefac) {
-      return 'https://buy.stripe.com/test_eVq9AU3nF9bZ1Ge6iecbC0b';
+      return import.meta.env.VITE_STRIPE_URL_SECONDSTREET_TREFAC ?? null;
     } else if (hasSecondstreet && hasOffmall) {
-      return 'https://buy.stripe.com/test_7sYcN68HZ4VJ84CfSOcbC0c';
+      return import.meta.env.VITE_STRIPE_URL_SECONDSTREET_OFFMALL ?? null;
     } else if (hasTrefac && hasOffmall) {
-      return 'https://buy.stripe.com/test_aFa3cwf6ncobckS8qmcbC0d';
+      return import.meta.env.VITE_STRIPE_URL_TREFAC_OFFMALL ?? null;
     } else if (hasSecondstreet) {
-      return 'https://buy.stripe.com/test_5kQ8wQ2jBgEr0Ca9uqcbC0e';
+      return import.meta.env.VITE_STRIPE_URL_SECONDSTREET ?? null;
     } else if (hasTrefac) {
-      return 'https://buy.stripe.com/test_bJe4gA1fx9bZ98G0XUcbC0a';
+      return import.meta.env.VITE_STRIPE_URL_TREFAC ?? null;
     } else if (hasOffmall) {
-      return 'https://buy.stripe.com/test_6oU6oIcYf3RFacK0XUcbC0f';
+      return import.meta.env.VITE_STRIPE_URL_OFFMALL ?? null;
     }
     return null;
   };
@@ -148,7 +148,7 @@ export default function Pricing() {
           </div>
 
           {/* Custom Plan */}
-          <div className="bg-white p-6 sm:p-10 rounded-2xl shadow-lg border-2 border-gray-200">
+          <div id="custom-plan" className="scroll-mt-24 bg-white p-6 sm:p-10 rounded-2xl shadow-lg border-2 border-gray-200">
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
               カスタムプラン
             </h3>
@@ -211,12 +211,18 @@ export default function Pricing() {
                   </div>
                 </div>
               )}
+
+            <div className="text-sm sm:text-base text-gray-600 mt-4 sm:mt-6">
+            上記から利用したいサイトを選択してください
             </div>
+            </div>
+
 
             <button
               type="button"
               onClick={handleCustomPlanClick}
-              className="block w-full bg-gray-900 text-white text-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg text-sm sm:text-lg font-semibold hover:bg-gray-800 transition-colors whitespace-nowrap cursor-pointer"
+              disabled={selectedSites.length === 0}
+              className="block w-full bg-gray-900 text-white text-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg text-sm sm:text-lg font-semibold transition-colors whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-gray-900 cursor-pointer hover:bg-gray-800"
             >
               カスタムプランを7日無料で試してみる
             </button>
@@ -253,7 +259,9 @@ export default function Pricing() {
             </p>
           </div>
           <p className="text-sm sm:text-base text-gray-600 mb-5">
-            お気軽に公式LINEからご相談ください。あなたに最適なプランをご提案します。
+            お気軽に公式LINEからご相談ください。
+            <br className="sm:hidden" />
+            あなたに最適なプランをご提案します。
           </p>
           <a
             href="https://lin.ee/ORf3l7j"

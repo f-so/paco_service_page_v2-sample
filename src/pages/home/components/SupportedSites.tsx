@@ -15,18 +15,18 @@ export default function SupportedSites() {
               今すぐ使える
             </h3>
             <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
-              <a href="#secondstreet" className="flex items-center gap-2.5 bg-teal-50 border border-teal-200 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full hover:bg-teal-100 transition-colors cursor-pointer">
+              <div className="flex items-center gap-2.5 bg-teal-50 border border-teal-200 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full">
                 <i className="ri-store-2-line text-lg text-teal-600"></i>
                 <span className="font-medium text-sm sm:text-base text-gray-900">セカスト</span>
-              </a>
-              <a href="#trefac" className="flex items-center gap-2.5 bg-teal-50 border border-teal-200 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full hover:bg-teal-100 transition-colors cursor-pointer">
+              </div>
+              <div className="flex items-center gap-2.5 bg-teal-50 border border-teal-200 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full">
                 <i className="ri-treasure-map-line text-lg text-teal-600"></i>
                 <span className="font-medium text-sm sm:text-base text-gray-900">トレファク</span>
-              </a>
-              <a href="#offmall" className="flex items-center gap-2.5 bg-teal-50 border border-teal-200 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full hover:bg-teal-100 transition-colors cursor-pointer">
+              </div>
+              <div className="flex items-center gap-2.5 bg-teal-50 border border-teal-200 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full">
                 <i className="ri-shopping-bag-3-line text-lg text-teal-600"></i>
                 <span className="font-medium text-sm sm:text-base text-gray-900">オフモール</span>
-              </a>
+              </div>
             </div>
           </div>
 

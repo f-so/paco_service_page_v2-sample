@@ -14,7 +14,7 @@ export function TermsModalProvider({ children }: { children: React.ReactNode }) 
   const navigate = useNavigate();
 
   const openTermsModal = useCallback((redirectUrl?: string) => {
-    setPendingUrl(typeof redirectUrl === 'string' ? redirectUrl : 'https://buy.stripe.com/test_9B66oI3nF9bZ0CadKGcbC0g');
+    setPendingUrl(typeof redirectUrl === 'string' ? redirectUrl : (import.meta.env.VITE_STRIPE_CHECKOUT_URL ?? null));
     setIsOpen(true);
   }, []);
 

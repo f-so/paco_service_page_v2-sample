@@ -20,7 +20,11 @@ export default function Problem() {
               <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-2 bg-gray-100 rounded-xl flex items-center justify-center">
                 <i className="ri-store-2-line text-2xl sm:text-3xl text-gray-400"></i>
               </div>
-              <p className="text-xs sm:text-sm font-semibold text-gray-900">仕入れ先のサイト</p>
+              <p className="text-xs sm:text-sm font-semibold text-gray-900">
+                仕入れ先の
+                <br className="sm:hidden" />
+                サイト
+              </p>
               <p className="text-xs text-gray-500">新着出品</p>
             </div>
 

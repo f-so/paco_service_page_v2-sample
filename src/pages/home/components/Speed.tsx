@@ -5,7 +5,7 @@ export default function Speed() {
   const { openTermsModal } = useTermsModal();
 
   return (
-    <section className="py-16 sm:py-20 px-4 sm:px-6 bg-gradient-to-br from-teal-50 to-gray-50">
+    <section id="speed-features" className="scroll-mt-20 py-16 sm:py-20 px-4 sm:px-6 bg-gradient-to-br from-teal-50 to-gray-50">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
           通知の速さが、<span className="text-red-500">せどり</span>を決める
@@ -29,40 +29,50 @@ export default function Speed() {
         {/* Speed Comparison */}
         <div className="bg-white p-6 sm:p-10 rounded-2xl shadow-lg">
           <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">
-            PACOの新着通知ツール「3つの特徴」
+            PACOの新着通知ツール
+            <br className="sm:hidden" />
+            「3つの特徴」
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-10">
             {/* Feature 1 */}
             <div className="text-center">
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="ri-flashlight-line text-3xl text-teal-600"></i>
+              <div className="flex flex-row items-center justify-center gap-3 sm:flex-col sm:mb-4">
+                <div className="w-16 h-16 flex-shrink-0 bg-teal-100 rounded-full flex items-center justify-center sm:mx-auto sm:mb-4">
+                  <i className="ri-flashlight-line text-3xl text-teal-600"></i>
+                </div>
+                <h4 className="text-lg font-bold text-gray-900 sm:mb-2">最速通知<span className="text-xs text-gray-600">※</span></h4>
               </div>
-              <h4 className="text-lg font-bold text-gray-900 mb-2">最速通知<span className="text-xs text-gray-600">※</span></h4>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                新着商品を即座に検知し、リアルタイムで通知します。
+              <p className="text-sm text-gray-600 leading-relaxed mt-3 sm:mt-0">
+                新着商品を即座に検知し、リアルタイムで！
               </p>
             </div>
 
             {/* Feature 2 */}
             <div className="text-center">
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="ri-eye-line text-3xl text-teal-600"></i>
+              <div className="flex flex-row items-center justify-center gap-3 sm:flex-col sm:mb-4">
+                <div className="w-16 h-16 flex-shrink-0 bg-teal-100 rounded-full flex items-center justify-center sm:mx-auto sm:mb-4">
+                  <i className="ri-eye-line text-3xl text-teal-600"></i>
+                </div>
+                <h4 className="text-lg font-bold text-gray-900 sm:mb-2">24時間稼働</h4>
               </div>
-              <h4 className="text-lg font-bold text-gray-900 mb-2">24時間稼働</h4>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                休むことなく、常に最新情報をチェックし続けます。
+              <p className="text-sm text-gray-600 leading-relaxed mt-3 sm:mt-0">
+                休むことなく、常に最新情報をチェック！
               </p>
             </div>
 
             {/* Feature 3 */}
             <div className="text-center">
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="ri-filter-3-line text-3xl text-teal-600"></i>
+              <div className="flex flex-row items-center justify-center gap-3 sm:flex-col sm:mb-4">
+                <div className="w-16 h-16 flex-shrink-0 bg-teal-100 rounded-full flex items-center justify-center sm:mx-auto sm:mb-4">
+                  <i className="ri-filter-3-line text-3xl text-teal-600"></i>
+                </div>
+                <h4 className="text-lg font-bold text-gray-900 sm:mb-2">精度の高い通知</h4>
               </div>
-              <h4 className="text-lg font-bold text-gray-900 mb-2">精度の高い通知</h4>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                不要な通知を減らし、本当に必要な情報だけをお届けします。
+              <p className="text-sm text-gray-600 leading-relaxed mt-3 sm:mt-0">
+                不要な通知を減らし、
+                <br className="sm:hidden" />
+                本当に必要な情報だけをお届け！
               </p>
             </div>
           </div>
